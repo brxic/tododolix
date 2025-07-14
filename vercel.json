@@ -1,9 +1,9 @@
 {
   "version": 2,
   "framework": "angular",
-  "buildCommand": "npm ci && ng build --configuration=production",
+  "buildCommand": "yarn install && yarn build",
   "outputDirectory": "dist/tododolix",
-  "installCommand": "npm ci --legacy-peer-deps",
+  "installCommand": "yarn install --frozen-lockfile",
   "functions": {},
   "env": {
     "NODE_VERSION": "18"
