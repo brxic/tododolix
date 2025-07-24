@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "framework": "angular",
-  "buildCommand": "yarn install && yarn build",
-  "outputDirectory": "dist/tododolix",
-  "installCommand": "yarn install --frozen-lockfile",
-  "functions": {},
-  "env": {
-    "NODE_VERSION": "18"
-  }
+  "builds": [
+    {
+      "src": "angular.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/tododolix"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
