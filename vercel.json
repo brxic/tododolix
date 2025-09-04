@@ -1,7 +1,8 @@
 {
-  "buildCommand": "npx -y -p @angular/cli@19 -p @angular-devkit/build-angular@19 ng build",
+  "installCommand": "npm ci --include=dev --legacy-peer-deps",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist/TododolixBasil/browser",
   "rewrites": [
-    { "source": "/(.*)",
-      "destination": "/index.html" }]
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
