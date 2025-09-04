@@ -1,7 +1,7 @@
 {
   "installCommand": "npm ci --include=dev --legacy-peer-deps",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/TododolixBasil/browser",
+  "outputDirectory": "dist/tododolix-basil/browser",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
